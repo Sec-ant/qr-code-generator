@@ -23,10 +23,6 @@
     "email": "zzwu@zju.edu.cn"
   },
   "keywords": [
-    "vite",
-    "template",
-    "vite-template",
-    "vanilla",
     "typescript",
     "qr-code-generator",
     "lib"
