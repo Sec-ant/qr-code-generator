@@ -1,5 +1,5 @@
-/// <reference types="vitest" />
 import { defineConfig } from "vite";
+import terser from "@rollup/plugin-terser";
 
 export default defineConfig({
   build: {
@@ -12,7 +12,13 @@ export default defineConfig({
       fileName: (format, entryName) =>
         format === "es" ? `${entryName}.js` : `${entryName}.${format}.js`,
     },
+    minify: false,
   },
+  plugins: [
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    terser(),
+  ],
   test: {
     browser: {
       enabled: true,
