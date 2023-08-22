@@ -46,7 +46,6 @@
     "postncu": "npm i"
   },
   "devDependencies": {
-    "@rollup/plugin-terser": "^0.4.3",
     "@typescript-eslint/eslint-plugin": "^6.4.1",
     "@typescript-eslint/parser": "^6.4.1",
     "@vitest/browser": "^0.34.2",

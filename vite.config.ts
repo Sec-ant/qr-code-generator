@@ -1,5 +1,5 @@
-import { defineConfig } from "vite";
-import terser from "@rollup/plugin-terser";
+import { defineConfig } from "vitest/config";
+import { transform } from "esbuild";
 
 export default defineConfig({
   build: {
@@ -12,12 +12,20 @@ export default defineConfig({
       fileName: (format, entryName) =>
         format === "es" ? `${entryName}.js` : `${entryName}.${format}.js`,
     },
-    minify: false,
   },
   plugins: [
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    terser(),
+    {
+      name: "minifyEs",
+      renderChunk: {
+        order: "post",
+        async handler(code, _, outputOptions) {
+          if (outputOptions.format === "es") {
+            return await transform(code, { minify: true });
+          }
+          return code;
+        },
+      },
+    },
   ],
   test: {
     browser: {
