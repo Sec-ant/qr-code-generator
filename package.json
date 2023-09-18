@@ -59,7 +59,7 @@
     "eslint": "^8.49.0",
     "npm-check-updates": "^16.13.3",
     "playwright": "^1.37.1",
-    "semantic-release": "^21.1.1",
+    "semantic-release": "^22.0.0",
     "typescript": "^5.2.2",
     "vite": "^4.4.9",
     "vitest": "^0.34.4"
