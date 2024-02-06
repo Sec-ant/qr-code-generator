@@ -53,15 +53,15 @@
     "@semantic-release/git": "^10.0.1",
     "@typescript-eslint/eslint-plugin": "^6.7.0",
     "@typescript-eslint/parser": "^6.7.0",
-    "@vitest/browser": "^0.34.4",
-    "@vitest/coverage-istanbul": "^0.34.4",
-    "@vitest/ui": "^0.34.4",
+    "@vitest/browser": "^1.2.2",
+    "@vitest/coverage-istanbul": "^1.2.2",
+    "@vitest/ui": "^1.2.2",
     "eslint": "^8.49.0",
     "npm-check-updates": "^16.13.3",
     "playwright": "^1.37.1",
-    "semantic-release": "^22.0.0",
+    "semantic-release": "^23.0.1",
     "typescript": "^5.2.2",
     "vite": "^5.0.2",
-    "vitest": "^0.34.4"
+    "vitest": "^1.2.2"
   }
 }
